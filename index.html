@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fun with triangles</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <i class="fa fa-caret-up" aria-hidden="true">Triangle Trivia</i>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li>
+                    <a href="#is-triangle">Is Triangle?</a>
+                </li>
+                <li>
+                    <a href="#triangle-quiz">Triangle Quiz</a>
+                </li>
+                <li>
+                    <a href="#hypotenuse-calculation">Hypotenuse-Calc</a>
+                </li>
+                <li>
+                    <a href="#triangle-Area-calculation">Triangle-Area-Calc</a>
+                </li>
+            </ul>
+        </nav>
+
+        <a href="https://mdakilahmed-portfolio.netlify.app/" target="_blank">
+            <h2>Portfolio</h2>
+        </a>
+
+    </header>
+
+    <!-- Is Traingle Start -->
+    <section id="is-triangle">
+        <h2>Is Triangle?</h2>
+        <p>Enter all the three angles to check whether it can form a triangle or not:</p>
+        <div class="is-triangle">
+            <input type="number" class="angle-input" placeholder="">
+            <label for="angle-input" class="angle-input-label">First Angle:</label>
+        </div>
+        <div class="is-triangle">
+            <input type="number" class="angle-input" placeholder="">
+            <label for="angle-input" class="angle-input-label">Second Angle:</label>
+        </div>
+        <div class="is-triangle">
+            <input type="number" class="angle-input" placeholder="">
+            <label for="angle-input" class="angle-input-label">Third Angle:</label>
+        </div>
+        <button id="is-triangle-quiz-button" type="submit">Check Triangle</button>
+        <div class="is-triangle-output"></div>
+    </section>
+    <!-- Is Triangle? end -->
+    <section id="triangle-quiz">
+        <div class="container">
+            <h2 class="triangle-quiz-h2">Triangle Quiz</h2>
+            <p>Well, let's see how much you know about triangles. Let's begin the quiz: </p>
+            <form class="triangle-quiz-form">
+                <div class="triangle-quiz-questions">
+                    <h3><span>Q.No.1: </span>A plane which is formed by three straight edges as its sides is called?
+                    </h3>
+                    <label><input type="radio" value="pentagon" name="question1">Pentagon</label>
+                    <label><input type="radio" value="hexagon" name="question1">Hexagon</label>
+                    <label><input type="radio" value="triangle" name="question1">Triangle</label>
+                </div>
+                <div class="triangle-quiz-questions">
+                    <h3><span>Q.No.2: </span>What is Straight Angle?</h3>
+                    <label><input type="radio" value="90" name="question2">90</label>
+                    <label><input type="radio" value="180" name="question2">180</label>
+                    <label><input type="radio" value="270" name="question2">270</label>
+                </div>
+                <div class="triangle-quiz-questions">
+                    <h3><span>Q.No.3: </span>Right Angle is </h3>
+                    <label><input type="radio" value="120" name="question3">120</label>
+                    <label><input type="radio" value="45" name="question3">45</label>
+                    <label><input type="radio" value="90" name="question3">90</label>
+                </div>
+                <div class="triangle-quiz-questions">
+                    <h3><span>Q.No.4: </span>Obtuse angle lies between which of these?</h3>
+                    <label><input type="radio" value="180 and 270" name="question4">180 and 270</label>
+                    <label><input type="radio" value="90 and 180" name="question4">90 and 180</label>
+                    <label><input type="radio" value="270 and 360" name="question4">270 and 360</label>
+                </div>
+                <div class="triangle-quiz-questions">
+                    <h3><span>Q,No.5: </span>Acute angle lies below.</h3>
+                    <label><input type="radio" value="90" name="question5">90</label>
+                    <label><input type="radio" value="120" name="question5">120</label>
+                    <label><input type="radio" value="180" name="question5">180</label>
+                </div>
+            </form>
+            <button id="submit-answer">Submit Answer</button>
+            <h2 id="triangle-quiz-result"></h2>
+        </div>
+    </section>
+
+
+    <!-- Hypotenuse Calculation start-->
+    <section id="hypotenuse-calculation">
+        <h2>Calculate Hypoteneuse</h2>
+        <p>Enter the bese and perpendicular to calculate the hypoteneuse:</p>
+        <div class="hypotenuse-calculation">
+            <input type="number" class="side-input" placeholder="">
+            <label for="side-input" class="side-input-label">Base:</label>
+        </div>
+        <div class="is-triangle">
+            <input type="number" class="side-input" placeholder="">
+            <label for="side-input" class="side-input-label">Perpendicular:</label>
+        </div>
+        <button id="calculate-hypoteneuse-button" type="submit">Calc Hypotenuse</button>
+        <div class="hypoteneuse-output"></div>
+    </section>
+    <!-- Hypotenuse Calculation end -->
+
+
+    <!-- Area of the triangle start -->
+    <section id="triangle-Area-calculation">
+        <h2>Area of Traingle Calc</h2>
+        <p>Enter the bese and perpendicular to calculate the area of the triangle:</p>
+        <div class="is-triangle">
+            <input type="number" class="side-length-input" placeholder="">
+            <label for="side-input" class="side-input-label">Base:</label>
+        </div>
+        <div class="is-triangle">
+            <input type="number" class="side-length-input" placeholder="">
+            <label for="side-input" class="side-input-label">Height:</label>
+        </div>
+        <button id="calculate-areaTriangle-button" type="submit">Calc Area of 🔺</button>
+        <div class="Area-of-triangle-output"></div>
+    </section>
+    <!-- Area of the triangle end -->
+    <Section>
+        <h2>Create with full Josh 🥷 by <span style="color: red;">Md Akil Ahmed </span>to become a full stack developer from Neog Bootcamp</h2>
+    </Section>
+    <script src="app.js"></script>
+</body>
+
+</html>

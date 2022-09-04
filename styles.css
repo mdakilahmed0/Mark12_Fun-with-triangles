@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:wght@500&family=Raleway:wght@400;500;600;700&display=swap");
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #c79d9d;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 30px;
+    box-shadow: 2px 4px 4px #888888;
+}
+
+li,
+a,
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #0088a9;
+    text-decoration: none;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+    font-size: x-large;
+}
+
+.nav-links li a:hover {
+    color: black;
+}
+
+button {
+    padding: 9px 20px;
+    background: rgb(141, 150, 150, 0.6);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid yellowgreen;
+    font-size: larger;
+}
+
+button:hover {
+    background-color: rgba(60, 105, 106, 1);
+}
+
+
+section {
+    margin: 5% auto;
+    padding-top: 15px;
+    width: 80%;
+    height: auto;
+    display: grid;
+    place-items: center;
+}
+
+#is-triangle,
+#hypotenuse-calculation,
+#triangle-Area-calculation {
+    box-shadow: 4px 6px 6px #888888;
+    border-radius: 10px;
+}
+
+section h2 {
+    font-size: xx-large;
+}
+
+section p {
+    padding: 30px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.is-triangle,
+.hypotenuse-calculation {
+    position: relative;
+}
+
+.angle-input,
+.side-input,
+.side-length-input {
+    border: 3px solid black;
+    border-radius: 5px;
+    outline: none;
+    background: none;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 60px;
+    font-size: x-large;
+    color: rgb(21, 22, 22);
+    padding-left: 8px;
+    text-align: center;
+}
+
+.angle-input:focus,
+.side-input:focus,
+.side-length-input:focus {
+    border: 3px solid yellowgreen;
+}
+
+.angle-input-label,
+.side-input-label {
+    position: absolute;
+    top: 0.6rem;
+    left: 1.5rem;
+    cursor: text;
+    font-size: x-large;
+    transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+}
+
+.angle-input:focus~.angle-input-label,
+.angle-input:not(:placeholder-shown).angle-input:not(:focus)~.angle-input-label,
+.side-input:focus~.side-input-label,
+.side-input:not(:placeholder-shown).side-input:not(:focus)~.side-input-label,
+.side-length-input:focus~.side-input-label,
+.side-length-input:not(:placeholder-shown).side-length-input:not(:focus)~.side-input-label {
+    top: -0.3rem;
+    left: 0.5rem;
+    font-size: 16px;
+}
+
+.is-triangle-output,
+.hypoteneuse-output,
+.Area-of-triangle-output {
+    position: relative;
+    margin: 3rem auto;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    font-size: xx-large;
+    text-align: center;
+    padding: 10px;
+}
+
+
+#triangle-quiz {
+    width: 80%;
+    height: auto;
+    margin: 6rem auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 4px 6px 6px #888888;
+}
+
+#triangle-quiz h2 {
+    text-align: center;
+}
+
+#triangle-quiz p {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#triangle-quiz .triangle-quiz-questions {
+    border: 2px solid black;
+    width: 90%;
+    padding: 15px 10px;
+    margin: 1rem auto;
+    border-radius: 10px;
+    box-shadow: 4px 6px 6px #888888;
+}
+
+.triangle-quiz-form input {
+    margin: 0 8px;
+}
+
+#triangle-quiz div h3,
+label {
+    margin-bottom: 0.7rem;
+    font-size: large;
+}
+
+#triangle-quiz div label {
+    padding-left: 2rem;
+}
+
+#triangle-quiz button {
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+#triangle-quiz h2 {
+    padding-bottom: 30px;
+}
